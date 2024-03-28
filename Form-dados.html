@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados Pessoais</title>
+</head>
+<body>
+    <h2>Formulário - Dados Pessoais</h2>
+
+    <form>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <label>Nome: </label>
+            <input type="text" name="nome" id="nome" placeholder="Ex: Lorena Franco" required>
+
+            <label>E-mail: </label>
+            <input type="email" name="email" id="email" required>
+
+            <label>Senha: </label>
+            <input type="password" name="senha" id="senha" required> <br> <br>
+
+            <label>Sexo: </label>
+            <label>
+                <input type="radio" name="sexo" id="masculino" value="masculino" required> Masculino
+            </label>
+            <label>
+                <input type="radio" name="sexo" id="feminino" value="feminino" required> Feminino
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Endereço</legend>
+
+            <label>CEP:</label>
+            <input type="text" name="cep" id="cep" placeholder="Ex: 76873-188" required>
+
+            <label>Logradouro</label>
+            <input type="text" name="logradouro" id="logradouro" placeholder="Ex: Rua Professor Cleberto" required>
+
+            <label>Número</label>
+            <input type="text" name="numero" id="numero" required> <br> <br>
+
+            <label>Complemento</label>
+            <input type="text" name="complemento" id="complemento">
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados Financeiros</legend>
+
+            <label>Tipo: </label>
+            <label>
+                <input type="radio" name="tipo-cartao" id="nacional" value="nacional" required> Nacional
+            </label>
+            <label>
+                <input type="radio" name="tipo-cartao" id="internacional" value="internacional" required> Internacional
+            </label>
+
+            <label>Bnadeira: </label>
+            <select name="bandeira" id="bandeira" required>
+                <option value="mastercard">       MasterCard       </option>
+                <option value="visa">             Visa             </option>
+                <option value="maestro">          Maestro          </option>
+                <option value="elo">              Elo              </option>
+                <option value="american-express"> American Express </option>
+                <option value="hipercard">        HiperCard        </option>
+                <option value="aura">             Aura             </option>
+                <option value="voyager">          Voyager          </option>
+            </select>
+
+            <label>Número do Cartão: </label>
+            <input type="text" name="numero-cartao" id="numero-cartao" placeholder="Ex: 86991 5225 67344 0" required> <br> <br>
+
+            <label>Mês: </label>
+            <input type="month" name="mes" id="mes" required>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+
+        </fieldset>
+    </form>
+</body>
+</html>
